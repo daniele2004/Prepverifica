@@ -6,10 +6,13 @@ import { Component, OnInit } from '@angular/core';
   styleUrls: ['./casella-posta.component.css']
 })
 export class CasellaPostaComponent implements OnInit {
-
-  constructor() { }
-
-  ngOnInit(): void {
+  lettere: string[]; //Creiamo il nostro vettore di stringhe 
+  constructor() { 
+     this.lettere = ['lettera1', 'lettera2', 'lettera3']; //Riempiamo il vettore
   }
-
+  ngOnInit() {
+  }
 }
+
+
+  
